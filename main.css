@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  --color-1: #fd383f;
+  --color-2: #fff;
+  --color-3: #f2f2f2;
+  --color-4: #ca2c31;
+  background-color: var(--color-3);
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: var(--color-2);
+  border-radius: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: var(--color-1);
+}
+
+.logo {
+  width: 100px;
+}
+
+#form {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: end;
+  margin: 50px 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input input {
+  height: 30px;
+}
+
+.btn {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background-color: var(--color-4);
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista ul {
+  list-style: decimal;
+}
+
+.lista ul li {
+  cursor: pointer;
+}
+
+.risca-tarefa {
+  text-decoration: line-through;
+}
