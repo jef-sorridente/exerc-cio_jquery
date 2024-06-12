@@ -3,9 +3,11 @@ $(document).ready(function () {
     e.preventDefault();
 
     const tarefa = $("#tarefa").val();
-    const novaTarefa = $(`<li> ${tarefa}</li>`);
+    const novaTarefa = $(`<li style="display: none" > ${tarefa}</li>`);
 
     $(novaTarefa).appendTo("#lista-tarefas");
+
+    $(novaTarefa).fadeIn();
 
     $("#tarefa").val("");
   });
